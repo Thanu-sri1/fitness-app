@@ -64,6 +64,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: fitness-tracker-service
+  namespace: thanu-ns
 spec:
   selector:
     app: fitness-tracker-app
