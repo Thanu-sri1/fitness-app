@@ -12,10 +12,10 @@ spec:
     metadata:
       labels:
         app: fitness-tracker-app
-      # annotations:
-      #   ad.datadoghq.com/fitness-tracker-app.logs: >-
-      #     [{"source":"nodejs","service":"fitness-tracker-service"},
-      #      {"source":"nodejs","service":"fitness-tracker-app"}]
+      annotations:
+        ad.datadoghq.com/fitness-tracker-app.logs: >-
+          [{"source":"nodejs","service":"fitness-tracker-service"},
+           {"source":"nodejs","service":"fitness-tracker-app"}]
     spec:
       containers:
         - name: fitness-tracker-app
@@ -71,4 +71,4 @@ spec:
   ports:
   - port: 80
     targetPort: 5000
-  type: ClusterIP
+  type: NodePort
