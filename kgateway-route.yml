@@ -18,6 +18,6 @@ spec:
               type: ReplacePrefixMatch
               replacePrefixMatch: /
       backendRefs:
-        - name: mongo-service
+        - name: mongodb-service
           port: 27017
    
