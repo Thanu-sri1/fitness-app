@@ -32,7 +32,7 @@ spec:
             cpu: "200m"
         volumeMounts:
           - name: mongodb-storage
-            mounthPath: /data/db  
+            mountPath: /data/db  
       volumes:
         - name: mongodb-storage
           emptyDir: 
