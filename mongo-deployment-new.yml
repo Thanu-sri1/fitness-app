@@ -37,7 +37,7 @@ spec:
         - name: mongodb-storage
           hostPath: 
             path: /ust-data
-            type: DirectoryorCreate
+            type: DirectoryOrCreate
 ---
 apiVersion: v1
 kind: Service
