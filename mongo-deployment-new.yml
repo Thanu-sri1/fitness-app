@@ -25,19 +25,18 @@ spec:
           - containerPort: 27017
         resources:
           requests: 
-            memory: "128Mi"
+            memory: "256Mi"
             cpu: "100m"
           limits:
-            memory: "130Mi" 
+            memory: "512Mi" 
             cpu: "200m"
         volumeMounts:
           - name: mongodb-storage
             mountPath: /data/db  
       volumes:
         - name: mongodb-storage
-          hostPath: 
-            path: /ust-data
-            type: DirectoryOrCreate
+          persistentVolumeClaim:
+            claimName: fitness-pvc
 ---
 apiVersion: v1
 kind: Service
