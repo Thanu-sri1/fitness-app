@@ -1,0 +1,13 @@
+apiVesion: v1
+kind: PersistentVolume
+metadata:
+  name: fitness-pv
+spec:
+  capacity: 
+    storage: 10Gi
+  accesModes:
+    - ReadWriteMany
+  persistentVolumeReclaimPolicy: Retain
+  nfs:
+    path: /var/nfs/general
+    server: 100.52.231.221  
