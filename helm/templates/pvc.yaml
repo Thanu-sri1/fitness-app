@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: fitness-pvc
-  namespace: thanu-ns
+  namespace: thanu-ns1
 spec:
   accessModes:
     - ReadWriteMany

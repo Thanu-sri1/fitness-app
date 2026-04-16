@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: fitness-tracker-app
-  namespace: thanu-ns
+  namespace: thanu-ns1
 spec:
   replicas: 2
   strategy:
