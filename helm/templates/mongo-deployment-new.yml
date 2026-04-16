@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongodb
-  namespace: thanu-ns1
+  namespace: thanu-ns
 spec:
   replicas: 1
   strategy:
