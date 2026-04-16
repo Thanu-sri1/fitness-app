@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
         - name: fitness-tracker-app
-          image: pulkit197/fitness_tracker-master-copy3-fitness-app:latest
+          image: nimeshsv814/fitness-application:6777f41cd9f372580945adc0503f30c1c345f4fa
           ports:
             - containerPort: 5000
           resources:
